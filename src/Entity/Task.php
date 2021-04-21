@@ -35,6 +35,7 @@ class Task
 
     /**
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="tasks")
+     * @ORM\JoinColumn(name="performer_id", referencedColumnName="id", onDelete="SET NULL")
      */
     private ?User $performer;
 

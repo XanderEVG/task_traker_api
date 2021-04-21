@@ -29,6 +29,19 @@ final class UserRoles
     public static function rolesList(): array
     {
         return [
+            'ROLE_USER',
+            'ROLE_ADMIN',
+        ];
+    }
+
+    /**
+     * Возвращает список доступных ролей пользователей системы c с описанием.
+     *
+     * @return array
+     */
+    public static function rolesListWithDesc(): array
+    {
+        return [
             'ROLE_USER' => 'Пользователь',
             'ROLE_ADMIN' => 'Администратор',
         ];
